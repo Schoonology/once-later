@@ -1,6 +1,6 @@
 {
   "name": "once-later",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple wrapper around callbacks to make them fire both once and later.",
   "main": "later.js",
   "directories": {
