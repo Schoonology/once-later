@@ -1,3 +1,6 @@
+// Noop for undefined functions
+function noop() {}
+
 // Slower, uncommon version
 function long(callback) {
   var called = false
@@ -36,6 +39,10 @@ function short(callback) {
 }
 
 function once(callback) {
+  if (!callback) {
+    return noop
+  }
+
   if (callback.length < 3) {
     return short(callback)
   }

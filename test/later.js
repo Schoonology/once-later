@@ -94,4 +94,8 @@ describe('once-later', function () {
       return 'Oops!'
     }
   })
+
+  it('should protect against unspecified callbacks', function () {
+    later()()
+  })
 })
